@@ -1,11 +1,12 @@
 import asyncio
 import logging
+import os
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 
 # ========== ВСТАВЬТЕ ВАШ ТОКЕН СЮДА ==========
-TOKEN = "8768122168:AAE0pNWeOKO_StCmh8IliOzYktVLEuF8cTU"
+TOKEN = os.GETENV("TELEGRAM_TOKEN")
 # ============================================
 
 logging.basicConfig(level=logging.INFO)
