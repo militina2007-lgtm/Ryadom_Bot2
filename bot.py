@@ -6,7 +6,7 @@ from aiogram.filters import Command
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 
 # ========== ВСТАВЬТЕ ВАШ ТОКЕН СЮДА ==========
-TOKEN = os.GETENV("TELEGRAM_TOKEN")
+TOKEN = os.getenv("TELEGRAM_TOKEN")
 # ============================================
 
 logging.basicConfig(level=logging.INFO)
